@@ -45,7 +45,24 @@ module.exports = {
             } 
           }
         ]
+      },
+      {
+        //配置babel 让浏览器兼容
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,    
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
-  }
+  },
+  // resolve:{
+  //   //alias别名,解决出现runtime-only的问题
+  //   alias:{
+  //      'vue$':'vue/dist/vue.esm.js'  
+  //   }
+  // }
 };

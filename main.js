@@ -9,3 +9,13 @@ require('./css/normal.css')
 //依赖less文件
 // require('./css/special.less')
 // document.write('<h2>你好啊</h2>')
+
+// 使用Vue进行开发
+import Vue from 'vue'
+
+const app = new Vue({
+    el:"#app",
+    data:{
+        message:'hello word'
+    }
+})
