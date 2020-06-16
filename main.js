@@ -7,5 +7,5 @@ show('Webpack');
 require('./css/normal.css')
 
 //依赖less文件
-require('./css/special.less')
-document.write('<h2>你好啊</h2>')
+// require('./css/special.less')
+// document.write('<h2>你好啊</h2>')
